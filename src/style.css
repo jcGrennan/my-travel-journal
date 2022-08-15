@@ -1,3 +1,5 @@
+/* styled for mobile device so does not scale to pc full screen */
+
 * {
     box-sizing: border-box;
 }

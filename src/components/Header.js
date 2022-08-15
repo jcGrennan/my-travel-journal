@@ -1,4 +1,9 @@
+// importing the logo image
+
 import travelLogo from "../images/travel-logo.png"
+
+/* composing and exporting the Header component. 
+Small and unnecessary for it to be a component of its own. Done for practice */
 
 export default function Header() {
     return (

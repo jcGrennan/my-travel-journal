@@ -1,7 +1,13 @@
+// importing the location icon
+
 import locationIcon from "../images/location-icon.png"
+
+// composing and exporting the Journal component using props to make it reusable
 
 export default function Journal(props) {
     
+    // creating a for loop to capitalise the location name from the data
+
     let country = props.location[0]
     for(let i = 1; i < props.location.length; i++) {
         country += props.location[i].toUpperCase()
@@ -22,6 +28,7 @@ export default function Journal(props) {
                     <p className="locs--desc">{props.description}</p>
                 </article>
             </main>
+                    {/* using conditional rendering to prevent a <hr /> displaying after the last location */}
                     <div>{!props.last && <hr />}</div>
         </div>
     )

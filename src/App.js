@@ -11,6 +11,7 @@ function App() {
     // mapping the data to the reusable Journal component using the array map method
 
   const locs = data.map((loc, i) => {
+    // using the data array length to find the last location for rendering purposes
     const isLast = data.length - 1 === i
     return ( 
             <Journal

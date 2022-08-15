@@ -10,10 +10,10 @@ export default function Journal(props) {
     return (
         <div className="locs">
             <main className="locs--main">
-                <img className="locs--img" src={props.imageUrl} />
+                <img className="locs--img" src={props.imageUrl} alt="location"/>
                 <article>
                     <div className="loc">
-                        <img className="loc--icon" src ={locationIcon}/>
+                        <img className="loc--icon" src ={locationIcon} alt=""/>
                         <h3 className="loc--country">{country}</h3>
                         <a className="loc--link" href={props.googleMapsUrl} rel="external" target="_blank">View on Google Maps</a>
                     </div>

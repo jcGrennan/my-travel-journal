@@ -6,7 +6,7 @@ import locationIcon from "../images/location-icon.png"
 
 export default function Journal(props) {
     
-    // creating a for loop to capitalise the location name from the data
+    // creating a for loop to loop through the location names and capitalise each letter
 
     let country = props.location[0]
     for(let i = 1; i < props.location.length; i++) {

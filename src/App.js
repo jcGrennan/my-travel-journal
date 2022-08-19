@@ -6,30 +6,36 @@ import data from "./data"
 
 // composing and exporting App
 
-function App() {
+export default function App() {
  
     // mapping the data to the reusable Journal component using the array map method
 
-  const locs = data.map((loc, i) => {
-    // using the data array length to find the last location for rendering purposes
-    const isLast = data.length - 1 === i
-    return ( 
+    const locs = data.map((loc, i) => {
+
+        // using the data array length to find the last location for preventing hr rendering at the bottom of the page
+        const isLast = data.length - 1 === i
+   
+        return ( 
+        
             <Journal
                 key={loc.id}
                 {...loc}
                 last={isLast}
             />
+
+        )
+    })
+
+    return (
+
+        <div>
+
+            <Header />
+        
+            <main>
+                {locs}
+            </main>
+
+        </div>
     )
-})
-
-return (
-    <div>
-        <Header />
-        <main>
-            {locs}
-        </main>
-    </div>
-)
 }
-
-export default App;

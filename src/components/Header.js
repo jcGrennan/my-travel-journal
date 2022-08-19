@@ -7,9 +7,12 @@ Small and unnecessary for it to be a component of its own. Done for practice */
 
 export default function Header() {
     return (
+
         <header>
+
             <img className="header--logo" src={travelLogo} alt=""/>
             <h3 className="header--title">my travel journal.</h3>
+            
         </header>
     )
 }

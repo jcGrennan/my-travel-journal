@@ -1,4 +1,7 @@
-export default [
+// Exporting the location data for the reusable Journal to pull from
+
+
+const data= [
     {
         id: 1,
         title: "Berliner Fernsehturm",
@@ -54,3 +57,5 @@ export default [
         imageUrl: "https://source.unsplash.com/jLs2jbkKQkE"
     }
 ]
+
+export default data

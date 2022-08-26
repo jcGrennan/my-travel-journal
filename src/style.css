@@ -14,44 +14,47 @@ header {
     background-color: #F55A5A;
     align-items: center;
     justify-content: center;
-    height: 55px;
+    height: 90px;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .header--logo {
-    color: #FFFFFF;
-    width: 30px;
+    width: 50px;
 }
 
 .header--title {
     font-weight: 400;
-    font-size: 14.4608px;
-    line-height: 18px;
+    font-size: 24px;
     letter-spacing: -0.075em;
     color: #FFFFFF;
-    padding: 7px;
+    padding: 10px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .locs {
-    padding: 10px 40px;
+    padding: 20px 60px;
     margin: auto;
-    width: 550px;
+    width: 650px;
 }
 
 .locs--main {
     display: flex;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 }
 
 .locs--img {
-    width: 126px;
-    height: 168px;
+    width: 232px;
+    height: 316px;
     border-radius: 5px;
 }
 
 article {
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .loc {
@@ -61,17 +64,16 @@ article {
 }
 
 .loc--icon {
-    margin-right: 5px;
-    width: 7px;
-    height: 9.55px;
+    margin-right: 10px;
+    width: 10px;
+    height: 12.55px;
 }
 
 .loc--country {
-    margin-right: 10px;
+    margin-right: 15px;
     font-weight: 400;
-    font-size: 10.24px;
-    line-height: 12px;
-    letter-spacing: 0.17em;
+    font-size: 12px;
+    letter-spacing: 0.24em;
 } 
 
 .loc--link {
@@ -83,25 +85,102 @@ article {
 }
 
 .locs--title {
-    margin-top: -2px;
-    margin-bottom: 18px;
-    font-size: 25px;
+    margin-top: -1px;
+    margin-bottom: 12px;
+    font-size: 26px;
 }
 
 .locs--dates {
-    font-size: 10.24px;
-    margin-bottom: 10px;
+    font-size: 14.24px;
+    margin-bottom: 28px;
 }
 
 .locs--desc {
     font-weight: 400;
-    font-size: 10.24px;
+    font-size: 14.24px;
     line-height: 150%;
     
 }
 
 hr {
-    margin: 0;
+    margin-top: 50px;
     width: 100%;
-    border: 1px solid #F5F5F5;
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 960px) {
+
+    header {
+        height: 55px;
+        margin-bottom: 40px;
+    }
+
+    .header--logo {
+        width: 30px;
+    }
+
+    .header--title {
+        font-size: 14.4608px;
+        line-height: 18px;
+        padding: 7px;
+    }
+
+    main{
+        display: block;
+    }
+
+    .locs {
+        padding: 10px 40px;
+        width: 550px;
+    }
+
+    .locs--main {
+        display: flex;
+        margin-bottom: 19px;
+    }
+
+    .locs--img {
+        width: 126px;
+        height: 168px;
+    }
+
+    article {
+        padding-left: 20px;
+    }
+
+    .loc--icon {
+        margin-right: 5px;
+        width: 7px;
+        height: 9.55px;
+    }
+
+    .loc--country {
+        margin-right: 10px;
+        font-size: 10.24px;
+        line-height: 12px;
+        letter-spacing: 0.17em;
+    } 
+
+    .loc--link {
+        font-size: 10.24px;
+    }
+
+    .locs--title {
+        margin-top: -2px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .locs--dates {
+        font-size: 10.24px;
+        margin-bottom: 18px;
+    }
+
+    .locs--desc {
+        font-size: 10.24px;
+    }
+
+    hr {
+        margin-top: 30px;
+    }
 }

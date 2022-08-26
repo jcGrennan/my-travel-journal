@@ -9,7 +9,6 @@ import data from "./data"
 export default function App() {
  
     // mapping the data to the reusable Journal component using the array map method
-
     const locs = data.map((loc, i) => {
 
         // using the data array length to find the last location for preventing hr rendering at the bottom of the page

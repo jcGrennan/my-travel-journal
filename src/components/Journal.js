@@ -1,13 +1,10 @@
 // importing the location icon
-
 import locationIcon from "../images/location-icon.png"
 
 // composing and exporting the Journal component using props to make it reusable
-
 export default function Journal(props) {
     
     // creating a for loop to loop through the location names and capitalise each letter
-
     let country = props.location[0]
 
     for(let i = 1; i < props.location.length; i++) {

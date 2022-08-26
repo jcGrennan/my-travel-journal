@@ -1,6 +1,4 @@
 // Exporting the location data for the reusable Journal to pull from
-
-
 const data= [
     {
         id: 1,
@@ -55,6 +53,17 @@ const data= [
         endDate: "July 3rd, 2022",
         description: "Since many years back, this intimate, dark and dusty little venue has attracted jazz enthusiasts from all over the world to Amsterdam. Many of the big names in jazz have entered the small stage over the years.",
         imageUrl: "https://source.unsplash.com/jLs2jbkKQkE"
+    },
+
+    {
+        id: 6,
+        title: "Staroměstské Náměstí",
+        location: "Czech Republic",
+        googleMapsUrl: "https://goo.gl/maps/FWeRD1AvDiJEeA178",
+        startDate: "August 31st, 2022",
+        endDate: "September 7th, 2022",
+        description: "Oldest square in the historic center of Prague with 10th-century origins, site of many Gothic buildings and a must see for any tourists.",
+        imageUrl: "https://source.unsplash.com/abJXt7t6b58"
     }
 ]
 
